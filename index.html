@@ -13,20 +13,17 @@ false);
 }
 function onDeviceReady() {
 navigator.notification.alert("PhoneGap is ready!");
+navigator.camera.getPicture(onSuccess, onFail, { quality: 50, 
+    destinationType: Camera.DestinationType.FILE_URI }); 
 
-navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-    destinationType: Camera.DestinationType.DATA_URL
- }); 
-
-function onSuccess(imageData) {
+function onSuccess(imageURI) {
     var image = document.getElementById('myImage');
-    image.src = "data:image/jpeg;base64," + imageData;
+    image.src = imageURI;
 }
 
 function onFail(message) {
     alert('Failed because: ' + message);
 }
-
 }
 </script>
 

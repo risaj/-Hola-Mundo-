@@ -12,12 +12,13 @@ document.addEventListener("deviceready",onDeviceReady,
 false);
 }
 function onDeviceReady() {
+    
 navigator.notification.alert("PhoneGap is ready!");
 navigator.camera.getPicture(onSuccess, onFail, { quality: 50, 
     destinationType: Camera.DestinationType.FILE_URI }); 
 
 function onSuccess(imageURI) {
-    var image = document.getElementById('myImage');
+    var image = document.getElementById('DCIM');
     image.src = imageURI;
 }
 

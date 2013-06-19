@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="2.3.4" encoding="UTF-8"?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
-xmlns:gap = "http://phonegap.com/ns/1.0"
+xmlns:gap = "http://phonegap.com/ns/2.3.4"
 id = "com.mwriley.pgbuild.sample"
-version = "1.0.0">
+version = "2.3.4">
 
 <name>PhoneGap Build Sample</name>
 
@@ -23,7 +23,7 @@ A sample PhoneGap application built to demo PhoneGap Build and the PhoneGap clou
 
 <icon src="icon.png" gap:role="default" />
 
-<feature name="http://api.phonegap.com/1.0/geolocation"/>
-<feature name="http://api.phonegap.com/1.0/network"/>
+<feature name="http://api.phonegap.com/2.3.4/geolocation"/>
+<feature name="http://api.phonegap.com/2.3.4/network"/>
 
 </widget>
